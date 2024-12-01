@@ -6,7 +6,7 @@ import SectionHeading from './sectionHeading';
 
 export default function ExperienceSection() {
   const { ref } = useSectionInView("Experience");
-  const [selectedTag, setSelectedTag] = useState<"Freelancing" | "Reverr">(experiencesData[0].tag);
+  const [selectedTag, setSelectedTag] = useState<"Sigtuple Technologies" | "MountBlue Technologies">(experiencesData[0].tag);
 
   // Filter the experiencesData based on the selected tag
   const selectedExperience = experiencesData.find(experience => experience.tag === selectedTag);
