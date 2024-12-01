@@ -63,7 +63,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Anil Maurya, </span>a full-stack developer<span className="italic text-blue-600"> passionate about leveraging technology to drive innovation</span>.
+        <span className="font-bold">Hello, I'm Anil Maurya, </span>a Software Engineer<span className="italic text-blue-600"> passionate about leveraging technology to drive innovation</span>.
       </motion.h1>
 
       <motion.div
