@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  --line-color: #e5e7eb;
+}
+
+html.dark {
+  --line-color: rgba(255, 255, 255, 0.2);
+}
+.borderBlack {
+  @apply border border-black/10;
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.timeline-element {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 50%; /* Each element takes half of the container width */
+  margin-bottom: 40px; /* Adjust as needed */
+}
+
+.timeline-left {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.timeline-right {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.timeline-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px; /* Adjust size of circle */
+  height: 40px; /* Adjust size of circle */
+  border-radius: 50%;
+  background-color: #f3f4f6; /* Light background color */
+  border: 2px solid #9ca3af; /* Light border color */
+}
+
+.timeline-icon-dark {
+  background-color: rgba(255, 255, 255, 0.15); /* Dark background color */
+  border-color: rgba(255, 255, 255, 0.5); /* Dark border color */
+}
+
+.timeline-content {
+  padding: 20px;
+  background-color: #f3f4f6; /* Light background color */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content-dark {
+  background-color: rgba(255, 255, 255, 0.05); /* Dark background color */
+}
+
+.timeline-date {
+  font-size: 14px;
+  color: #9ca3af;
+}
